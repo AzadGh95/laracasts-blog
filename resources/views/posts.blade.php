@@ -4,10 +4,13 @@
 @endsection
 @section('content')
     @foreach ($posts as $post)
-        <article class="{{$loop->even ? 'foobar':''}}">
+        <article>
             <a href="/posts/{{$post->slug}}">
-                <h1>{{$post->title}}</h1>
+                <h1>{!! $post->title !!}</h1>
             </a>
+            <p>
+                <a href="/categories/{{$post->category->slug}}">{{$post->category->name}}</a>
+            </p>
             <div>
                 {{$post->excerpt}}
             </div>
