@@ -52,5 +52,5 @@
         </article>
     </main>
 
-   
+
 </x-layout>
