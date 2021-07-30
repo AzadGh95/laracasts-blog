@@ -17,7 +17,7 @@
 
         <div class="mt-8 md:mt-0 flex items-center">
             @auth
-                <span class="text-xs font-bold uppercase">WELCOME {{ auth()->user()->name }}!</span>
+                <span class="text-xs font-bold uppercase">WELCOME, {{ auth()->user()->name }}!</span>
 
                 <form method="POST" action="/logout" class="bold text-xs text-blue-500 ml-6">
                     @csrf
