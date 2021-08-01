@@ -1,5 +1,6 @@
 @props(['commit'])
-<article class="flex bg-gray-100 border border-gray-20 p-6 rounded-xl space-x-4 my-6">
+<x-panel class="bg-gray-50">
+<article class="flex space-x-4 my-6">
     <div class="flex-shrink-0">
         <img src="https://i.pravatar.cc/70?u={{$commit->id}}" alt="" width="70" height="70" class="rounded-xl">
     </div>
@@ -13,3 +14,4 @@
         <p>{{$commit->body}}</p>
     </div>
 </article>
+</x-panel>
