@@ -36,7 +36,10 @@ class Post extends Model
             )
         );
     }
-
+    public function commits()
+    {
+        return $this->hasMany(Commit::class);
+    }
     public function category()
     {
         return $this->belongsTo(Category::class);

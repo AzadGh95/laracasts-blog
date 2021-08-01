@@ -3,6 +3,8 @@
 namespace Database\Factories;
 
 use App\Models\Commit;
+use App\Models\Post;
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class CommitFactory extends Factory
@@ -22,7 +24,9 @@ class CommitFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'post_id' => Post::factory(),
+            'user_id' => User::factory(),
+            'body' => $this->faker->paragraph()
         ];
     }
 }
