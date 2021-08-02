@@ -5,7 +5,7 @@ use App\Http\Controllers\PostCommitsController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\SessionsController;
-use App\Services\NewsLetter;
+use App\Services\MailchimpNewsLetter;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Validation\ValidationException;
 use MailchimpMarketing\ApiClient;
